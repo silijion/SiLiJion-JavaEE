@@ -1,0 +1,49 @@
+#本服务端口号
+server:
+  port: 8003
+
+#配置mybitis链接信息
+mybatis:
+  # mybatis配置文件所在路径
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  # 所有Entity别名类所在包
+  type-aliases-package: com.silijion.springcloud.entities
+  # mapper映射文件
+  mapper-locations:
+    - classpath:mybatis/mapper/**/*.xml
+
+#8001-3暴露统一的微服务名字，用于消费端调用的时候做负载均衡。用不同的数据库，每个服务独立一个数据库
+spring:
+  application:
+    name: silijionservicecloud-dept
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
+    url: jdbc:mysql://localhost:3306/cloudDB03              # 数据库名称
+    username: root
+    password: qm123
+    dbcp2:
+      min-idle: 5                                           # 数据库连接池的最小维持连接数
+      initial-size: 5                                       # 初始化连接数
+      max-total: 5                                          # 最大连接数
+      max-wait-millis: 200                                  # 等待连接获取的最大超时时间
+
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url:
+      #      defaultZone: http://localhost:7001/eureka
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  #eureka Status名称修改
+  instance:
+    instance-id: silijionservicecloud-dept8003 #自定义服务名称信息
+    prefer-ip-address: true     #访问路径可以显示IP地址
+
+#禁用自我保护模式
+#eureka.server.enable-self-preservation = false
+
+#错误页面配置信息
+info:
+  app.name: silijion-microservicecloud
+  company.name: www.silijion.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

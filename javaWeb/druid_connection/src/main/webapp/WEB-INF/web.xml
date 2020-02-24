@@ -1,0 +1,39 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+<!--  <servlet>-->
+<!--    <servlet-name>loginServlet</servlet-name>-->
+<!--    <servlet-class>cn.itcast.web.servlet.LoginServlet</servlet-class>-->
+<!--  </servlet>-->
+
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>loginServlet</servlet-name>-->
+<!--    <url-pattern>/loginServlet</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+
+<!--  <servlet>-->
+<!--    <servlet-name>failServlet</servlet-name>-->
+<!--    <servlet-class>cn.itcast.web.servlet.FailServlet</servlet-class>-->
+<!--  </servlet>-->
+
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>failServlet</servlet-name>-->
+<!--    <url-pattern>/failServlet</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+
+<!--  <servlet>-->
+<!--    <servlet-name>successServlet</servlet-name>-->
+<!--    <servlet-class>cn.itcast.web.servlet.SuccessServlet</servlet-class>-->
+<!--  </servlet>-->
+
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>successServlet</servlet-name>-->
+<!--    <url-pattern>/successServlet</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+</web-app>
