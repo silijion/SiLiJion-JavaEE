@@ -1,8 +1,8 @@
 package com.silijion.springcloud.service.impl;
 
+import com.silijion.springcloud.entities.Dept;
 import com.silijion.springcloud.service.DeptService;
 import com.silijion.springcloud.dao.DeptDao;
-import com.silijion.springcloud.entities.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

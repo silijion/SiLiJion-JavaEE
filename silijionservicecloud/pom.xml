@@ -2,9 +2,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.silijion.springcloud</groupId>
+    <parent>
+        <artifactId>SiLiJionJavaEE</artifactId>
+        <groupId>com.qm.silijion</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
     <artifactId>silijionservicecloud</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+
     <modules>
         <module>silijionservicecloud-api</module>
         <module>silijionservicecloud-provider-dept-8001</module>

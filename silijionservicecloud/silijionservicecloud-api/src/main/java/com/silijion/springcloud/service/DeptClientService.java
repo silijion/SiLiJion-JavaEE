@@ -14,7 +14,7 @@ import java.util.List;
 *@date        2019/12/8  21:54
 *@version     1.0
 */
-@FeignClient(value = "SILIJIONSERVICECLOUD-DEPT",fallbackFactory = DeptClientServiceFallbackFactory.class)
+//@FeignClient(value = "SILIJIONSERVICECLOUD-DEPT",fallbackFactory = DeptClientServiceFallbackFactory.class)
 public interface DeptClientService {
 
     @RequestMapping(value = "/dept/get/{id}",method = RequestMethod.GET)
